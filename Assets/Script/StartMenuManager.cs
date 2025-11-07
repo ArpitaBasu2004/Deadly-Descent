@@ -6,7 +6,7 @@ public class StartMenuManager : MonoBehaviour
     // This is the name of your main game scene.
     // Make sure this matches your scene file!
     // Yours is "SampleScene"
-    public string gameSceneName = "SampleScene"; 
+    public string gameSceneName = "s1"; 
 
     public void StartGame()
     {

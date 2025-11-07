@@ -1,20 +1,18 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // We need this to change scenes later
 
 public class FinishLine : MonoBehaviour
 {
-    // This function runs when anything with a Rigidbody enters the trigger
+    // This is the new variable.
+    // We will drag our GameManager object here in the Inspector.
+    public GameManager gameManager;
+
     private void OnTriggerEnter(Collider other)
     {
-        // We check if the object that entered is the "Player"
         if (other.CompareTag("Player"))
         {
-            // If it is the player, they win!
-            Debug.Log("YOU WIN!");
-            
-            // For now, we'll just reload the game
-            // Later, we'll change this to load the "Game Over" screen
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // Instead of just logging, we now call the GameManager
+            Debug.Log("Finish Line Reached!");
+            gameManager.ShowGameWon();
         }
     }
 }
