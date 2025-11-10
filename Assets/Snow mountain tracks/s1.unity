@@ -20,12 +20,12 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.617168, g: 0.6221371, b: 0.6320754, a: 1}
+  m_AmbientSkyColor: {r: 0.6320754, g: 0.5873531, b: 0.5873531, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.9716981, g: 0.9579477, b: 0.9579477, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -4894,7 +4894,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743114371}
   serializedVersion: 4
-  m_Mass: 1500
+  m_Mass: 1200
   m_Drag: 0
   m_AngularDrag: 0.1
   m_CenterOfMass: {x: 0, y: -1, z: 0}
@@ -4967,8 +4967,6 @@ MonoBehaviour:
   motorForce: 1500
   brakeForce: 2000
   steerAngle: 35
-  idleBrakeForce: 500
-  centerOfMass: {x: 0, y: -0.5, z: 0}
   minPitch: 0.8
   maxPitch: 2.5
   maxSpeedForPitch: 50
@@ -13557,7 +13555,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -13566,7 +13564,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.94
+    m_Strength: 0.47
     m_Bias: 0.65
     m_NormalBias: 0.45
     m_NearPlane: 0.91
